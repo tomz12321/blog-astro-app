@@ -1,5 +1,6 @@
 ---
 import Social from './Social.astro';
+import dayjs from 'dayjs';
 ---
 
 <style>
@@ -15,3 +16,17 @@ import Social from './Social.astro';
   <Social platform="github" username="withastro" />
   <Social platform="youtube" username="astrodotbuild" />
 </footer>
+<div>
+  <div>
+    <strong>{'Pokedex Blog'}</strong> ©{dayjs().format('YYYY')}
+  </div>
+  <div>
+  <small>
+    Created by&nbsp;
+    <a href="https://github.com/tomz12321" target="_blank" rel="noreferrer">
+      Tom & Avery
+    </a>{' '}
+    - Version 0.9.0
+  </small>
+</div>
+</div>
