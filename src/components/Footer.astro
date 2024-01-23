@@ -1,17 +1,69 @@
 ---
-import Social from './Social.astro';
+import dayjs from 'dayjs';
 ---
 
 <style>
   footer {
+    padding: 2em 1em 6em 1em;
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
-</style>
 
-<footer>
-  <Social platform="twitter" username="astrodotbuild" />
-  <Social platform="github" username="withastro" />
-  <Social platform="youtube" username="astrodotbuild" />
+  /* Style all font awesome icons */
+  .fa {
+    font-size: 24px;
+    text-align: center;
+    object-fit: cover;
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  /* Set a specific color for social icon*/
+  .social-icon {
+    padding: 0.5rem 1rem;
+      color: white;
+      background-color: #4c1d95;
+      text-decoration: none;
+  }
+  .backcolor-link {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #4c1d95;
+    text-decoration: none;
+  }
+
+</style>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<footer id="themeToggle">
+  <a href="https://www.facebook.com/yang.jyhwoei" class="fa fa-facebook-square social-icon"></a>
+  <a href="https://github.com/tomz12321" class="fa fa-github social-icon"></a>
+  <a href="https://www.linkedin.com/in/web-developer-jyhwoei-tom-yang" class="fa fa-linkedin-square social-icon"></a>
 </footer>
+<div>
+  <div>
+    <strong>{'Personal Blog'}</strong> ©{dayjs().format('YYYY')}
+  </div>
+  <div>
+    <small>
+      Created by&nbsp;
+      <a
+        class="backcolor-link"
+        href="https://github.com/tomz12321"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Tom & Avery
+      </a>
+      &nbsp;- Version 0.9.0
+    </small>
+  </div>
+</div>
