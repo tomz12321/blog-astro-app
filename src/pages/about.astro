@@ -6,17 +6,16 @@ import '../styles/global.css';
 const pageTitle = 'About Me';
 
 const identity = {
-  firstName: 'Sarah',
-  country: 'Canada',
+  firstName: 'Tom',
+  country: 'Taiwan',
   occupation: 'Technical Writer',
-  hobbies: ['photography', 'birdwatching', 'baseball'],
+  hobbies: ['photography', 'coding', 'baseball'],
 };
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Docs'];
 
 const happy = true;
-const finished = false;
-const goal = 3;
+const finished = true;
 ---
 
 <html lang="en">
@@ -65,15 +64,7 @@ const goal = 3;
 
     {happy && <p>I am happy to be learning Astro!</p>}
 
-    {finished && <p>I finished this tutorial!</p>}
-
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
+    {finished && <p>I finished this tutorial in 7 days!</p>}
     <Footer />
   </body>
 </html>

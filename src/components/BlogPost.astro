@@ -1,4 +1,14 @@
 ---
 const { title, url } = Astro.props;
 ---
-<li><a href={url}>{title}</a></li>
+<li><a class="backcolor-link" href={url}>{title}</a></li>
+
+<style>
+    .backcolor-link {
+      padding: 0.5rem 1rem;
+      color: darkslategrey;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    </style>
