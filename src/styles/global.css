@@ -91,4 +91,8 @@ h1 {
     color: #fff;
   }
 
+  .buttons {
+    border-radius: .5em;
+  }
+
 }
